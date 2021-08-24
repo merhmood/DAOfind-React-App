@@ -1,0 +1,89 @@
+header {
+  display: flex;
+  height: 8rem;
+  padding-top: 1em;
+  margin-bottom: 1.5em;
+  .logo {
+    width: 60%;
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+  .input {
+    padding: 2.5em 0;
+    position: relative;
+    width: 100%;
+    input {
+      color: white;
+      background-color: $blue-dark;
+      border: 1px solid white;
+      border-radius: 7px;
+      margin-left: 0.5em;
+      height: 2.5rem;
+      width: 98%;
+      position: absolute;
+      left: -0em;
+    }
+  }
+  .wallet {
+    padding: 2.5em 0;
+    width: 25%;
+    button {
+      color: white;
+      background-color: $blue-dark;
+      border: 1px solid white;
+      border-radius: 7px;
+      padding: 0.7em 0em;
+      padding-left: 1em;
+      margin-left: 1em;
+      width: 80%;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    .logo {
+      width: 70%;
+      margin: 0 auto;
+      img {
+      }
+    }
+    .input {
+      width: 73%;
+      margin: 0 auto;
+      margin-top: -1.3em;
+      input {
+        width: 100%;
+      }
+    }
+    .wallet {
+      width: 40%;
+      margin-top: -3em;
+      margin-left: 8em;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    .logo {
+      margin-left: 3em;
+    }
+    .input {
+      margin-left: 2.7em;
+      input {
+        width: 100%;
+      }
+    }
+    .wallet {
+      width: 45%;
+      margin: 0 auto;
+      margin-top: -3em;
+    }
+  }
+}

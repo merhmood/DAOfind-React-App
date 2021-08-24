@@ -1,0 +1,17 @@
+nav {
+  text-decoration: none;
+  cursor: pointer;
+  uL {
+    .link {
+      text-decoration: none;
+    }
+    li {
+      text-decoration: underline;
+      img {
+        width: 8%;
+      }
+    }
+  }
+}
+@media screen and (min-width: 500px) {
+}
