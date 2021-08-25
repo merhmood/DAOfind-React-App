@@ -1,7 +1,7 @@
 .index {
   color: black;
   height: 100%;
-  .body {
+  .index-body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -452,7 +452,7 @@
         font-weight: bold;
         padding-right: 1em;
       }
-      .trophy {
+      .index-header {
         position: relative;
         display: flex;
         padding: 0 5em;
@@ -647,7 +647,7 @@
 }
 @media screen and (max-width: 500px) {
   .index {
-    .body {
+    .index-body {
       margin-bottom: 2em;
       display: grid;
       grid-template-columns: auto;

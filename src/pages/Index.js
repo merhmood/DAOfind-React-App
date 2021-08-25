@@ -32,10 +32,10 @@ const Index = () => {
   return (
     <div className="index" style={filterSize}>
       <Header />
-      <div className="body">
+      <div className="index-body">
         <Nav />
         <section>
-          <div className="trophy">
+          <div className="index-header">
             <div className="hyphen-left"></div>
             <img src={`${process.env.PUBLIC_URL}/assets/trophy.png`} alt="" />
             <p>DAO Leaderboard</p>

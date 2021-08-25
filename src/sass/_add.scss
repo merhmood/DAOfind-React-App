@@ -1,0 +1,190 @@
+.add-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  nav {
+    padding: 2em 3em;
+    width: 21%;
+    background-color: #f2f2f2;
+    ul {
+      li {
+        display: block;
+        color: $blue-light;
+        margin-bottom: 1em;
+      }
+    }
+  }
+  section {
+    width: 53%;
+    background-color: #f2f2f2;
+    .add-header {
+      margin-top: 1.5em;
+      position: relative;
+      display: flex;
+      div {
+        width: 25%;
+        height: 0.05rem;
+        background-color: black;
+        margin: auto;
+      }
+      p {
+        position: relative;
+        padding: 1em 3em;
+        font-size: 1.2rem;
+        font-weight: 700;
+        img {
+          position: absolute;
+          top: 0.7em;
+          left: 0.6em;
+          width: 17%;
+        }
+      }
+    }
+    form {
+      margin-top: 2em;
+      padding-left: 3em;
+      padding-bottom: 2em;
+      input {
+        box-sizing: border-box;
+        padding-left: 0.5em;
+        width: 27%;
+        margin-right: 5%;
+        margin-bottom: 3em;
+        height: 3rem;
+        &:nth-child(1) {
+          width: 58%;
+        }
+        &:nth-child(2) {
+          width: 25%;
+        }
+      }
+      textarea {
+        width: 91%;
+        height: 7rem;
+        padding: 1em 1em;
+        margin-bottom: 2em;
+      }
+      button {
+        font-weight: 700;
+        padding: 1em 0;
+        width: 20%;
+      }
+    }
+  }
+  aside {
+    width: 21%;
+    margin-right: 1.5rem;
+    .no-dao__assets {
+      background-color: #f2f2f2;
+      .no-of__daos {
+        padding: 0.5em 0.5em;
+        margin-bottom: 0.5em;
+        .no-of__daos-header {
+          padding-left: 0.2em;
+          font-size: 1.1rem;
+          font-weight: 700;
+        }
+        div {
+          display: flex;
+          justify-content: space-between;
+          border: 1px solid #b8b8b8;
+          border-radius: 10px;
+          padding: 0.5em;
+          background-color: white;
+          p {
+            font-size: 0.9rem;
+            span {
+              color: $blue-light;
+            }
+            &:last-child {
+              padding: 0 0.3em;
+              width: 10%;
+              text-align: right;
+              border-radius: 10px;
+              background-color: rgb(163, 241, 163);
+            }
+          }
+        }
+      }
+      .total-assets {
+        padding: 0.5em 0.5em;
+        margin-bottom: 0.5em;
+        .total-assets__header {
+          padding-left: 0.2em;
+          font-size: 1.1rem;
+          font-weight: 700;
+        }
+        div {
+          justify-content: space-between;
+          border: 1px solid #b8b8b8;
+          border-radius: 10px;
+          padding: 0.5em;
+          background-color: white;
+          p {
+            font-size: 0.9rem;
+            margin-bottom: 0.5em;
+            span {
+              color: $blue-light;
+            }
+            &:last-child {
+              padding: 0 0.3em;
+              width: fit-content;
+              text-align: right;
+              border-radius: 10px;
+              background-color: rgb(163, 241, 163);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .add-body {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+
+    nav {
+      margin: 0 auto;
+      width: 90%;
+      margin-top: 5.5em;
+      margin-bottom: 1em;
+    }
+
+    section {
+      grid-row: 3/4;
+      width: 90%;
+      margin: 0 auto;
+      .add-header {
+        padding: 0 1.5em;
+        div {
+          width: 20%;
+        }
+        p {
+          font-size: 0.95rem;
+        }
+      }
+      form {
+        padding-left: 1.7em;
+        input {
+          width: 90%;
+          &:nth-child(1) {
+            width: 90%;
+          }
+          &:nth-child(2) {
+            width: 90%;
+          }
+        }
+        button {
+          width: 35%;
+        }
+      }
+    }
+    aside {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+}

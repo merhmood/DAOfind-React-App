@@ -1,6 +1,8 @@
-import React, { useContext } from "react";
+import React from "react";
 import AppContextProvider from "./components/AppContext";
 import Index from "./pages/Index";
+import Add from "./pages/Add";
+import Learn from "./pages/Learn";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import "./App.css";
@@ -14,8 +16,23 @@ const App = () => {
             <Route path="/" exact>
               <Index />
             </Route>
+            <Route path="/add" exact>
+              <Add />
+            </Route>
+            <Route path="/learn" exact>
+              <Learn />
+            </Route>
             <Route path="*" exact>
-              <p>error page</p>
+              <p
+                style={{
+                  height: "100Vh",
+                  textAlign: "center",
+                  fontSize: "5rem",
+                  color: "white",
+                }}
+              >
+                Page not Available
+              </p>
             </Route>
           </Switch>
         </Router>

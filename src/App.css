@@ -36,6 +36,9 @@ header .input {
 }
 
 header .input input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 2em;
   color: white;
   background-color: #4685ff;
   border: 1px solid white;
@@ -140,7 +143,7 @@ nav uL li img {
   height: 100%;
 }
 
-.index .body {
+.index .index-body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -152,26 +155,26 @@ nav uL li img {
           align-items: flex-start;
 }
 
-.index .body nav {
+.index .index-body nav {
   padding: 2em 3em;
   width: 21%;
   background-color: #f2f2f2;
 }
 
-.index .body nav ul li {
+.index .index-body nav ul li {
   display: block;
   color: #4cb8ff;
   margin-bottom: 1em;
 }
 
-.index .body section {
+.index .index-body section {
   width: 53%;
   margin-left: -1%;
   padding: 2.5em 1.5em;
   background-color: #f2f2f2;
 }
 
-.index .body section .table-head {
+.index .index-body section .table-head {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -184,22 +187,22 @@ nav uL li img {
   font-weight: 700;
 }
 
-.index .body section .table-head .name-head {
+.index .index-body section .table-head .name-head {
   width: 32%;
   padding-left: 1em;
 }
 
-.index .body section .table-head p {
+.index .index-body section .table-head p {
   text-align: right;
   font-size: 0.7rem;
   width: 17%;
 }
 
-.index .body section .table-head p:last-child {
+.index .index-body section .table-head p:last-child {
   width: 10%;
 }
 
-.index .body section .blue-border {
+.index .index-body section .blue-border {
   position: absolute;
   top: 17em;
   left: 21.6em;
@@ -208,14 +211,14 @@ nav uL li img {
   height: 70px;
 }
 
-.index .body section .daolist-close {
+.index .index-body section .daolist-close {
   border: 1px solid #b8b8b8;
   background-color: white;
   border-radius: 10px;
   margin-bottom: 0.1em;
 }
 
-.index .body section .daolist-close div {
+.index .index-body section .daolist-close div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -225,7 +228,7 @@ nav uL li img {
   cursor: pointer;
 }
 
-.index .body section .daolist-close div p {
+.index .index-body section .daolist-close div p {
   font-size: 0.9rem;
   font-weight: 700;
   padding: 1.1em 0 0.5em 0;
@@ -236,50 +239,50 @@ nav uL li img {
   width: 17%;
 }
 
-.index .body section .daolist-close div p:last-child {
+.index .index-body section .daolist-close div p:last-child {
   border-style: none;
   width: 10%;
 }
 
-.index .body section .daolist-close div p img {
+.index .index-body section .daolist-close div p img {
   width: 37%;
 }
 
-.index .body section .daolist-close div .member {
+.index .index-body section .daolist-close div .member {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
 }
 
-.index .body section .daolist-close div .member img {
+.index .index-body section .daolist-close div .member img {
   position: absolute;
   top: 0.85em;
   left: 0.8em;
   width: 25%;
 }
 
-.index .body section .daolist-close div .ethereum {
+.index .index-body section .daolist-close div .ethereum {
   padding-left: 1.5em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
 }
 
-.index .body section .daolist-close div .ethereum img {
+.index .index-body section .daolist-close div .ethereum img {
   position: absolute;
   top: 0.85em;
   left: 0.3em;
   width: 25%;
 }
 
-.index .body section .daolist-close div .name {
+.index .index-body section .daolist-close div .name {
   position: relative;
   text-align: left;
   padding-left: 3em;
   width: 32%;
 }
 
-.index .body section .daolist-close div .name img {
+.index .index-body section .daolist-close div .name img {
   position: absolute;
   top: 1.1em;
   left: 0.8em;
@@ -287,7 +290,7 @@ nav uL li img {
   border-radius: 4px;
 }
 
-.index .body section .daolist-open {
+.index .index-body section .daolist-open {
   background-color: white;
   border: 1px solid #b8b8b8;
   background-color: white;
@@ -297,7 +300,7 @@ nav uL li img {
   margin-bottom: 0.1em;
 }
 
-.index .body section .daolist-open .daolist-open__wrapper {
+.index .index-body section .daolist-open .daolist-open__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -306,14 +309,14 @@ nav uL li img {
           justify-content: space-between;
 }
 
-.index .body section .daolist-open .daolist-open__wrapper:first-child {
+.index .index-body section .daolist-open .daolist-open__wrapper:first-child {
   cursor: pointer;
   border-bottom-style: solid;
   border-width: 1px;
   border-color: #f8f8f8;
 }
 
-.index .body section .daolist-open .daolist-open__wrapper p {
+.index .index-body section .daolist-open .daolist-open__wrapper p {
   font-size: 0.9rem;
   font-weight: 700;
   padding: 1.1em 0 0.5em 0;
@@ -324,51 +327,51 @@ nav uL li img {
   width: 17%;
 }
 
-.index .body section .daolist-open .daolist-open__wrapper p:last-child {
+.index .index-body section .daolist-open .daolist-open__wrapper p:last-child {
   border-style: none;
   width: 10%;
 }
 
-.index .body section .daolist-open .daolist-open__wrapper p img {
+.index .index-body section .daolist-open .daolist-open__wrapper p img {
   width: 37%;
 }
 
-.index .body section .daolist-open .daolist-open__wrapper .ethereum {
+.index .index-body section .daolist-open .daolist-open__wrapper .ethereum {
   padding-left: 1.5em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
 }
 
-.index .body section .daolist-open .daolist-open__wrapper .ethereum img {
+.index .index-body section .daolist-open .daolist-open__wrapper .ethereum img {
   position: absolute;
   top: 0.85em;
   left: 0.3em;
   width: 25%;
 }
 
-.index .body section .daolist-open .daolist-open__wrapper .member {
+.index .index-body section .daolist-open .daolist-open__wrapper .member {
   padding-left: 0em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
 }
 
-.index .body section .daolist-open .daolist-open__wrapper .member img {
+.index .index-body section .daolist-open .daolist-open__wrapper .member img {
   position: absolute;
   top: 0.85em;
   left: 0.8em;
   width: 25%;
 }
 
-.index .body section .daolist-open .daolist-open__wrapper .name {
+.index .index-body section .daolist-open .daolist-open__wrapper .name {
   position: relative;
   text-align: left;
   padding-left: 3em;
   width: 32%;
 }
 
-.index .body section .daolist-open .daolist-open__wrapper .name img {
+.index .index-body section .daolist-open .daolist-open__wrapper .name img {
   position: absolute;
   top: 1.1em;
   left: 0.8em;
@@ -376,11 +379,11 @@ nav uL li img {
   border-radius: 4px;
 }
 
-.index .body section .daolist-open .details {
+.index .index-body section .daolist-open .details {
   position: relative;
 }
 
-.index .body section .daolist-open .details .border-left {
+.index .index-body section .daolist-open .details .border-left {
   position: absolute;
   top: -3em;
   width: 2px;
@@ -388,12 +391,12 @@ nav uL li img {
   background-color: #4cb8ff;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper {
+.index .index-body section .daolist-open .details .details-heading__wrapper {
   margin-top: 0.5em;
   border-style: none;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-heading {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-heading {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -402,7 +405,7 @@ nav uL li img {
           justify-content: space-between;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-heading .social-icons {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-heading .social-icons {
   position: relative;
   padding-left: 2em;
   margin-top: 0.5em;
@@ -414,7 +417,7 @@ nav uL li img {
   height: fit-content;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-heading .social-icons img {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-heading .social-icons img {
   position: absolute;
   margin-right: 0;
   margin-left: 0;
@@ -423,39 +426,39 @@ nav uL li img {
      object-fit: cover;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-heading .social-icons img:nth-child(1) {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-heading .social-icons img:nth-child(1) {
   top: 0.2em;
   left: 0.9em;
   width: 7%;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-heading .social-icons img:nth-child(2) {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-heading .social-icons img:nth-child(2) {
   left: 4em;
   width: 10.5%;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-heading .social-icons img:nth-child(3) {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-heading .social-icons img:nth-child(3) {
   left: 5.8em;
   width: 10.5%;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-heading .social-icons img:nth-child(4) {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-heading .social-icons img:nth-child(4) {
   left: 7.6em;
   width: 10.5%;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-heading .social-icons img:nth-child(5) {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-heading .social-icons img:nth-child(5) {
   left: 9.2em;
   width: 10.5%;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-heading .date {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-heading .date {
   margin-top: 1em;
   width: 10%;
   margin-left: -5em;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-heading .date p {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-heading .date p {
   font-size: 0.7rem;
   font-style: italic;
   font-weight: 500;
@@ -463,7 +466,7 @@ nav uL li img {
   width: 100%;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-heading .recent-proposal {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-heading .recent-proposal {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -471,7 +474,7 @@ nav uL li img {
   width: 50%;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-heading .recent-proposal p {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-heading .recent-proposal p {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -481,43 +484,43 @@ nav uL li img {
   font-weight: 500;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-heading .recent-proposal .recent-proposal__hypen {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-heading .recent-proposal .recent-proposal__hypen {
   margin: auto;
   width: 20%;
   height: 0.5px;
   background-color: black;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-paragraph {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-paragraph {
   margin-top: 0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-paragraph .details-paragraph__wrapper {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-paragraph .details-paragraph__wrapper {
   width: 50%;
   font-size: 0.7rem;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-paragraph .details-paragraph__wrapper:nth-child(1) {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-paragraph .details-paragraph__wrapper:nth-child(1) {
   padding-left: 1em;
   width: 60%;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-paragraph .details-paragraph__wrapper:nth-child(2) {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-paragraph .details-paragraph__wrapper:nth-child(2) {
   width: 40%;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-paragraph .details-paragraph__wrapper p {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-paragraph .details-paragraph__wrapper p {
   margin-bottom: 0.5em;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-paragraph .details-paragraph__wrapper p:nth-child(1) {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-paragraph .details-paragraph__wrapper p:nth-child(1) {
   margin-bottom: 2em;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-paragraph .details-paragraph__wrapper div {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-paragraph .details-paragraph__wrapper div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -528,15 +531,15 @@ nav uL li img {
   margin-top: 1.5em;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-paragraph .details-paragraph__wrapper div p {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-paragraph .details-paragraph__wrapper div p {
   margin-right: 0.5rem;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-paragraph .details-paragraph__wrapper div p:nth-child(2) {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-paragraph .details-paragraph__wrapper div p:nth-child(2) {
   color: #888888;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-paragraph .details-paragraph__wrapper .wallet-address {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-paragraph .details-paragraph__wrapper .wallet-address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -548,12 +551,12 @@ nav uL li img {
   width: 100%;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-paragraph .details-paragraph__wrapper .wallet-address .wallet-address__wrapper .image {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-paragraph .details-paragraph__wrapper .wallet-address .wallet-address__wrapper .image {
   margin-top: -0.4em;
   width: 35%;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-paragraph .details-paragraph__wrapper .wallet-address .wallet-address__wrapper .image img {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-paragraph .details-paragraph__wrapper .wallet-address .wallet-address__wrapper .image img {
   width: 4rem;
   height: 4rem;
   -o-object-fit: cover;
@@ -561,7 +564,7 @@ nav uL li img {
   border-radius: 100%;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-paragraph .details-paragraph__wrapper .wallet-address .wallet-address__wrapper .address {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-paragraph .details-paragraph__wrapper .wallet-address .wallet-address__wrapper .address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -574,31 +577,31 @@ nav uL li img {
   width: 65%;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-paragraph .details-paragraph__wrapper .wallet-address .wallet-address__wrapper .address p:first-child {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-paragraph .details-paragraph__wrapper .wallet-address .wallet-address__wrapper .address p:first-child {
   font-size: 1.1rem;
   margin-bottom: -5em;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-paragraph .details-paragraph__wrapper .wallet-address .wallet-address__wrapper .address p:last-child {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-paragraph .details-paragraph__wrapper .wallet-address .wallet-address__wrapper .address p:last-child {
   font-size: 0.6rem;
   margin-top: -10.5em;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-paragraph .details-paragraph__wrapper .member-load__more {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-paragraph .details-paragraph__wrapper .member-load__more {
   text-align: right;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-paragraph .recent-proposal__wrapper {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-paragraph .recent-proposal__wrapper {
   width: 50%;
   font-size: 0.75rem;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-paragraph .recent-proposal__wrapper .add-enzyme {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-paragraph .recent-proposal__wrapper .add-enzyme {
   margin-left: 3rem;
   padding-left: 3.3rem;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-paragraph .recent-proposal__wrapper .add-enzyme p {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-paragraph .recent-proposal__wrapper .add-enzyme p {
   width: 13rem;
   position: relative;
   padding-left: 0.75em;
@@ -606,11 +609,11 @@ nav uL li img {
   border-color: #4cb8ff;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-paragraph .recent-proposal__wrapper .add-enzyme p:last-child {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-paragraph .recent-proposal__wrapper .add-enzyme p:last-child {
   padding-left: 8em;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-paragraph .recent-proposal__wrapper .add-enzyme p img {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-paragraph .recent-proposal__wrapper .add-enzyme p img {
   position: absolute;
   left: 10rem;
   width: 1.5rem;
@@ -620,13 +623,13 @@ nav uL li img {
   border-radius: 100%;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-paragraph .recent-proposal__wrapper .test-proposal {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-paragraph .recent-proposal__wrapper .test-proposal {
   margin-top: 1em;
   margin-left: 3rem;
   padding-left: 3.3rem;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-paragraph .recent-proposal__wrapper .test-proposal p {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-paragraph .recent-proposal__wrapper .test-proposal p {
   width: 13rem;
   position: relative;
   padding-left: 0.75em;
@@ -634,11 +637,11 @@ nav uL li img {
   border-color: #4cb8ff;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-paragraph .recent-proposal__wrapper .test-proposal p:last-child {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-paragraph .recent-proposal__wrapper .test-proposal p:last-child {
   padding-left: 8em;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-paragraph .recent-proposal__wrapper .test-proposal p img {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-paragraph .recent-proposal__wrapper .test-proposal p img {
   position: absolute;
   left: 10rem;
   width: 1.5rem;
@@ -648,12 +651,12 @@ nav uL li img {
   border-radius: 100%;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-paragraph .recent-proposal__wrapper .voting-dao__section {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-paragraph .recent-proposal__wrapper .voting-dao__section {
   padding-top: 1em;
   margin-left: 2em;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-paragraph .recent-proposal__wrapper .voting-dao__section .voting-dao__thead {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-paragraph .recent-proposal__wrapper .voting-dao__section .voting-dao__thead {
   padding-left: 4.6rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -663,12 +666,12 @@ nav uL li img {
           justify-content: space-evenly;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-paragraph .recent-proposal__wrapper .voting-dao__section .voting-dao__thead p {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-paragraph .recent-proposal__wrapper .voting-dao__section .voting-dao__thead p {
   text-decoration: underline;
   width: 50%;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-paragraph .recent-proposal__wrapper .voting-dao__section .voting-dao__body {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-paragraph .recent-proposal__wrapper .voting-dao__section .voting-dao__body {
   padding-left: 4.4rem;
   font-size: 0.6rem;
   display: -webkit-box;
@@ -679,29 +682,29 @@ nav uL li img {
           justify-content: space-evenly;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-paragraph .recent-proposal__wrapper .voting-dao__section .voting-dao__body p {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-paragraph .recent-proposal__wrapper .voting-dao__section .voting-dao__body p {
   width: 50%;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-paragraph .recent-proposal__wrapper .founding-member {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-paragraph .recent-proposal__wrapper .founding-member {
   margin-top: 2rem;
   margin-left: 8em;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-paragraph .recent-proposal__wrapper .founding-member .founding-member__wrapper {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-paragraph .recent-proposal__wrapper .founding-member .founding-member__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-paragraph .recent-proposal__wrapper .founding-member .founding-member__wrapper .founding-member__head-hypen {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-paragraph .recent-proposal__wrapper .founding-member .founding-member__wrapper .founding-member__head-hypen {
   width: 4rem;
   height: 1px;
   margin: auto;
   background-color: black;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .details-paragraph .recent-proposal__wrapper .founding-member img {
+.index .index-body section .daolist-open .details .details-heading__wrapper .details-paragraph .recent-proposal__wrapper .founding-member img {
   margin-top: 1em;
   margin-right: 2em;
   border-radius: 100%;
@@ -711,14 +714,14 @@ nav uL li img {
      object-fit: cover;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .mint-dao__member {
+.index .index-body section .daolist-open .details .details-heading__wrapper .mint-dao__member {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: 2em auto;
 }
 
-.index .body section .daolist-open .details .details-heading__wrapper .mint-dao__member button {
+.index .index-body section .daolist-open .details .details-heading__wrapper .mint-dao__member button {
   padding: 0.3em;
   color: #4cb8ff;
   border: 3px solid #4cb8ff;
@@ -728,7 +731,7 @@ nav uL li img {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
-.index .body section .load-more {
+.index .index-body section .load-more {
   cursor: pointer;
   text-align: right;
   margin-top: 1em;
@@ -737,7 +740,7 @@ nav uL li img {
   padding-right: 1em;
 }
 
-.index .body section .trophy {
+.index .index-body section .index-header {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -746,48 +749,48 @@ nav uL li img {
   margin-bottom: 1.5em;
 }
 
-.index .body section .trophy div {
+.index .index-body section .index-header div {
   width: 25%;
   height: 0.05rem;
   background-color: black;
   margin: auto;
 }
 
-.index .body section .trophy img {
+.index .index-body section .index-header img {
   position: absolute;
   top: -0.6em;
   left: 14.8em;
   width: 5%;
 }
 
-.index .body section .trophy p {
+.index .index-body section .index-header p {
   margin-left: 2.5em;
   margin-right: 0.5em;
   font-weight: 700;
   font-size: 1.4rem;
 }
 
-.index .body aside {
+.index .index-body aside {
   width: 21%;
   margin-right: 1.5rem;
 }
 
-.index .body aside .no-dao__assets {
+.index .index-body aside .no-dao__assets {
   background-color: #f2f2f2;
 }
 
-.index .body aside .no-dao__assets .no-of__daos {
+.index .index-body aside .no-dao__assets .no-of__daos {
   padding: 0.5em 0.5em;
   margin-bottom: 0.5em;
 }
 
-.index .body aside .no-dao__assets .no-of__daos .no-of__daos-header {
+.index .index-body aside .no-dao__assets .no-of__daos .no-of__daos-header {
   padding-left: 0.2em;
   font-size: 1.1rem;
   font-weight: 700;
 }
 
-.index .body aside .no-dao__assets .no-of__daos div {
+.index .index-body aside .no-dao__assets .no-of__daos div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -800,15 +803,15 @@ nav uL li img {
   background-color: white;
 }
 
-.index .body aside .no-dao__assets .no-of__daos div p {
+.index .index-body aside .no-dao__assets .no-of__daos div p {
   font-size: 0.9rem;
 }
 
-.index .body aside .no-dao__assets .no-of__daos div p span {
+.index .index-body aside .no-dao__assets .no-of__daos div p span {
   color: #4cb8ff;
 }
 
-.index .body aside .no-dao__assets .no-of__daos div p:last-child {
+.index .index-body aside .no-dao__assets .no-of__daos div p:last-child {
   padding: 0 0.3em;
   width: 10%;
   text-align: right;
@@ -816,18 +819,18 @@ nav uL li img {
   background-color: #a3f1a3;
 }
 
-.index .body aside .no-dao__assets .total-assets {
+.index .index-body aside .no-dao__assets .total-assets {
   padding: 0.5em 0.5em;
   margin-bottom: 0.5em;
 }
 
-.index .body aside .no-dao__assets .total-assets .total-assets__header {
+.index .index-body aside .no-dao__assets .total-assets .total-assets__header {
   padding-left: 0.2em;
   font-size: 1.1rem;
   font-weight: 700;
 }
 
-.index .body aside .no-dao__assets .total-assets div {
+.index .index-body aside .no-dao__assets .total-assets div {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -837,16 +840,16 @@ nav uL li img {
   background-color: white;
 }
 
-.index .body aside .no-dao__assets .total-assets div p {
+.index .index-body aside .no-dao__assets .total-assets div p {
   font-size: 0.9rem;
   margin-bottom: 0.5em;
 }
 
-.index .body aside .no-dao__assets .total-assets div p span {
+.index .index-body aside .no-dao__assets .total-assets div p span {
   color: #4cb8ff;
 }
 
-.index .body aside .no-dao__assets .total-assets div p:last-child {
+.index .index-body aside .no-dao__assets .total-assets div p:last-child {
   padding: 0 0.3em;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -856,12 +859,12 @@ nav uL li img {
   background-color: #a3f1a3;
 }
 
-.index .body aside .daos-filter {
+.index .index-body aside .daos-filter {
   margin-top: 1em;
   width: 20rem;
 }
 
-.index .body aside .daos-filter div {
+.index .index-body aside .daos-filter div {
   padding: 0.5em;
   background-color: #f2f2f2;
   width: 19rem;
@@ -871,7 +874,7 @@ nav uL li img {
       grid-template-columns: repeat(3, 1fr);
 }
 
-.index .body aside .daos-filter div p {
+.index .index-body aside .daos-filter div p {
   cursor: pointer;
   border: 1px solid #b8b8b8;
   font-size: 0.75rem;
@@ -885,7 +888,7 @@ nav uL li img {
   width: fit-content;
 }
 
-.index .body aside .daos-filter div p:hover {
+.index .index-body aside .daos-filter div p:hover {
   color: #4685ff;
 }
 
@@ -968,7 +971,7 @@ nav uL li img {
 }
 
 @media screen and (max-width: 500px) {
-  .index .body {
+  .index .index-body {
     margin-bottom: 2em;
     display: -ms-grid;
     display: grid;
@@ -977,17 +980,17 @@ nav uL li img {
     -ms-grid-rows: auto auto auto;
         grid-template-rows: auto auto auto;
   }
-  .index .body nav {
+  .index .index-body nav {
     width: 90%;
     margin: 0 auto;
     margin-top: 6em;
     margin-bottom: 11em;
   }
-  .index .body nav ul {
+  .index .index-body nav ul {
     margin: 0 auto;
     width: 100%;
   }
-  .index .body section {
+  .index .index-body section {
     padding-right: 5em;
     width: 100vh;
     margin: 0 auto;
@@ -995,43 +998,43 @@ nav uL li img {
     overflow-x: scroll;
     width: 90%;
   }
-  .index .body section .table-head {
+  .index .index-body section .table-head {
     margin-top: 2em;
     width: 101.5vh;
   }
-  .index .body section .trophy {
+  .index .index-body section .trophy {
     margin: 0 auto;
     margin-left: 4em;
     padding: 0 3em;
     width: 96.5vh;
   }
-  .index .body section .trophy div {
+  .index .index-body section .trophy div {
     width: 70%;
   }
-  .index .body section .trophy .hyphen-right {
+  .index .index-body section .trophy .hyphen-right {
     margin-right: 5em;
   }
-  .index .body section .trophy img {
+  .index .index-body section .trophy img {
     width: 4%;
     top: -0.2em;
     left: 13.5em;
   }
-  .index .body section .trophy p {
+  .index .index-body section .trophy p {
     padding-left: 1em;
     font-size: 1rem;
     width: 100%;
     margin-right: 0em;
   }
-  .index .body section .daolist-close {
+  .index .index-body section .daolist-close {
     width: 101.5vh;
   }
-  .index .body section .daolist-open {
+  .index .index-body section .daolist-open {
     width: 101.5vh;
   }
-  .index .body section .load-more {
+  .index .index-body section .load-more {
     text-align: left;
   }
-  .index .body aside {
+  .index .index-body aside {
     margin: 0 auto;
     margin-top: -10em;
     margin-bottom: 17em;
@@ -1040,13 +1043,577 @@ nav uL li img {
     -ms-grid-row-span: 1;
     grid-row: 2/3;
   }
-  .index .body aside .daos-filter {
+  .index .index-body aside .daos-filter {
     background-color: #f2f2f2;
     width: 100%;
   }
-  .index .body aside .daos-filter div {
+  .index .index-body aside .daos-filter div {
     margin: 0 auto;
     width: 80%;
+  }
+}
+
+.add-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.add-body nav {
+  padding: 2em 3em;
+  width: 21%;
+  background-color: #f2f2f2;
+}
+
+.add-body nav ul li {
+  display: block;
+  color: #4cb8ff;
+  margin-bottom: 1em;
+}
+
+.add-body section {
+  width: 53%;
+  background-color: #f2f2f2;
+}
+
+.add-body section .add-header {
+  margin-top: 1.5em;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.add-body section .add-header div {
+  width: 25%;
+  height: 0.05rem;
+  background-color: black;
+  margin: auto;
+}
+
+.add-body section .add-header p {
+  position: relative;
+  padding: 1em 3em;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.add-body section .add-header p img {
+  position: absolute;
+  top: 0.7em;
+  left: 0.6em;
+  width: 17%;
+}
+
+.add-body section form {
+  margin-top: 2em;
+  padding-left: 3em;
+  padding-bottom: 2em;
+}
+
+.add-body section form input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 0.5em;
+  width: 27%;
+  margin-right: 5%;
+  margin-bottom: 3em;
+  height: 3rem;
+}
+
+.add-body section form input:nth-child(1) {
+  width: 58%;
+}
+
+.add-body section form input:nth-child(2) {
+  width: 25%;
+}
+
+.add-body section form textarea {
+  width: 91%;
+  height: 7rem;
+  padding: 1em 1em;
+  margin-bottom: 2em;
+}
+
+.add-body section form button {
+  font-weight: 700;
+  padding: 1em 0;
+  width: 20%;
+}
+
+.add-body aside {
+  width: 21%;
+  margin-right: 1.5rem;
+}
+
+.add-body aside .no-dao__assets {
+  background-color: #f2f2f2;
+}
+
+.add-body aside .no-dao__assets .no-of__daos {
+  padding: 0.5em 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.add-body aside .no-dao__assets .no-of__daos .no-of__daos-header {
+  padding-left: 0.2em;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.add-body aside .no-dao__assets .no-of__daos div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid #b8b8b8;
+  border-radius: 10px;
+  padding: 0.5em;
+  background-color: white;
+}
+
+.add-body aside .no-dao__assets .no-of__daos div p {
+  font-size: 0.9rem;
+}
+
+.add-body aside .no-dao__assets .no-of__daos div p span {
+  color: #4cb8ff;
+}
+
+.add-body aside .no-dao__assets .no-of__daos div p:last-child {
+  padding: 0 0.3em;
+  width: 10%;
+  text-align: right;
+  border-radius: 10px;
+  background-color: #a3f1a3;
+}
+
+.add-body aside .no-dao__assets .total-assets {
+  padding: 0.5em 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.add-body aside .no-dao__assets .total-assets .total-assets__header {
+  padding-left: 0.2em;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.add-body aside .no-dao__assets .total-assets div {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid #b8b8b8;
+  border-radius: 10px;
+  padding: 0.5em;
+  background-color: white;
+}
+
+.add-body aside .no-dao__assets .total-assets div p {
+  font-size: 0.9rem;
+  margin-bottom: 0.5em;
+}
+
+.add-body aside .no-dao__assets .total-assets div p span {
+  color: #4cb8ff;
+}
+
+.add-body aside .no-dao__assets .total-assets div p:last-child {
+  padding: 0 0.3em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: right;
+  border-radius: 10px;
+  background-color: #a3f1a3;
+}
+
+@media screen and (max-width: 500px) {
+  .add-body {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+  }
+  .add-body nav {
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 5.5em;
+    margin-bottom: 1em;
+  }
+  .add-body section {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .add-body section .add-header {
+    padding: 0 1.5em;
+  }
+  .add-body section .add-header div {
+    width: 20%;
+  }
+  .add-body section .add-header p {
+    font-size: 0.95rem;
+  }
+  .add-body section form {
+    padding-left: 1.7em;
+  }
+  .add-body section form input {
+    width: 90%;
+  }
+  .add-body section form input:nth-child(1) {
+    width: 90%;
+  }
+  .add-body section form input:nth-child(2) {
+    width: 90%;
+  }
+  .add-body section form button {
+    width: 35%;
+  }
+  .add-body aside {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.learn-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.learn-body nav {
+  padding: 2em 3em;
+  width: 21%;
+  background-color: #f2f2f2;
+}
+
+.learn-body nav ul li {
+  display: block;
+  color: #4cb8ff;
+  margin-bottom: 1em;
+}
+
+.learn-body section {
+  width: 53%;
+  background-color: #f2f2f2;
+}
+
+.learn-body section .learn-header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.learn-body section .learn-header div {
+  width: 25%;
+  height: 0.05rem;
+  background-color: black;
+  margin: auto;
+}
+
+.learn-body section .learn-header p {
+  position: relative;
+  padding: 1em 3em;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.learn-body section .learn-header p img {
+  position: absolute;
+  top: 1em;
+  left: 0.6em;
+  width: 17%;
+}
+
+.learn-body section .add-items {
+  padding-left: 1.5em;
+  width: 95%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+}
+
+.learn-body section .add-items .add-item__wrapper {
+  border-radius: 12px;
+  margin-left: 0.7em;
+  margin-bottom: 0.2em;
+  border: 1px solid #b8b8b8;
+  background-color: white;
+}
+
+.learn-body section .add-items .add-item__wrapper div {
+  margin-bottom: 1em;
+  padding-left: 0.08em;
+}
+
+.learn-body section .add-items .add-item__wrapper div .add-item__wrapper-seperetor {
+  background-color: #b8b8b8;
+  margin: 0.6em 0;
+  margin-left: 28%;
+  width: 70%;
+  height: 0.05rem;
+}
+
+.learn-body section .add-items .add-item__wrapper div button {
+  border: none;
+  width: 30%;
+  font-size: 0.5rem;
+  margin-left: 1.25em;
+}
+
+.learn-body section .add-items .add-item__wrapper div p {
+  width: 50%;
+  margin-left: 48%;
+  font-size: 0.6rem;
+  padding-left: 2em;
+  position: relative;
+}
+
+.learn-body section .add-items .add-item__wrapper div p img {
+  position: absolute;
+  left: 0.5em;
+  width: 12%;
+}
+
+.learn-body section .add-items .add-item__wrapper div .add-item__wrapper-header {
+  padding-left: 2.5em;
+  width: 100%;
+  margin-top: 1em;
+  margin-left: 0;
+  font-size: 1rem;
+}
+
+.learn-body section .add-items .add-item__wrapper div .add-item__wrapper-header img {
+  top: 0.2em;
+  width: 10%;
+}
+
+.learn-body section .load-more {
+  margin: 0.5em auto;
+  width: 80%;
+  font-size: 0.7rem;
+  text-align: right;
+}
+
+.learn-body section .questions {
+  border: 1px solid #b8b8b8;
+  border-radius: 10px;
+  padding: 0.5em;
+  width: 94%;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  background-color: white;
+}
+
+.learn-body section .questions .question {
+  margin: 0 auto;
+  width: 99%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.learn-body section .questions .question p:nth-child(1) {
+  font-size: 0.95rem;
+  width: 78%;
+}
+
+.learn-body section .questions .question p:nth-child(2) {
+  margin-top: 0.5em;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 0.5rem;
+  width: 12%;
+}
+
+.learn-body section .questions .question p:nth-child(2) img {
+  width: 11%;
+}
+
+.learn-body section .questions .question p:nth-child(3) {
+  margin-top: 0.2em;
+  padding: 0em 1.3em;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #f2f2f2;
+  font-size: 0.6rem;
+  width: 10%;
+}
+
+.learn-body aside {
+  width: 21%;
+  margin-right: 1.5rem;
+}
+
+.learn-body aside .no-dao__assets {
+  background-color: #f2f2f2;
+}
+
+.learn-body aside .no-dao__assets .no-of__daos {
+  padding: 0.5em 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.learn-body aside .no-dao__assets .no-of__daos .no-of__daos-header {
+  padding-left: 0.2em;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.learn-body aside .no-dao__assets .no-of__daos div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid #b8b8b8;
+  border-radius: 10px;
+  padding: 0.5em;
+  background-color: white;
+}
+
+.learn-body aside .no-dao__assets .no-of__daos div p {
+  font-size: 0.9rem;
+}
+
+.learn-body aside .no-dao__assets .no-of__daos div p span {
+  color: #4cb8ff;
+}
+
+.learn-body aside .no-dao__assets .no-of__daos div p:last-child {
+  padding: 0 0.3em;
+  width: 10%;
+  text-align: right;
+  border-radius: 10px;
+  background-color: #a3f1a3;
+}
+
+.learn-body aside .no-dao__assets .total-assets {
+  padding: 0.5em 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.learn-body aside .no-dao__assets .total-assets .total-assets__header {
+  padding-left: 0.2em;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.learn-body aside .no-dao__assets .total-assets div {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid #b8b8b8;
+  border-radius: 10px;
+  padding: 0.5em;
+  background-color: white;
+}
+
+.learn-body aside .no-dao__assets .total-assets div p {
+  font-size: 0.9rem;
+  margin-bottom: 0.5em;
+}
+
+.learn-body aside .no-dao__assets .total-assets div p span {
+  color: #4cb8ff;
+}
+
+.learn-body aside .no-dao__assets .total-assets div p:last-child {
+  padding: 0 0.3em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: right;
+  border-radius: 10px;
+  background-color: #a3f1a3;
+}
+
+@media screen and (max-width: 500px) {
+  .learn-body {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+  }
+  .learn-body nav {
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 5.5em;
+    margin-bottom: 1em;
+  }
+  .learn-body section {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .learn-body section .learn-header {
+    padding: 0 1.5em;
+  }
+  .learn-body section .learn-header div {
+    width: 20%;
+  }
+  .learn-body section .learn-header p {
+    font-size: 0.95rem;
+  }
+  .learn-body section .add-item__wrapper {
+    width: 90%;
+  }
+  .learn-body section .add-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .learn-body section .questions .question p:nth-child(1) {
+    width: 74%;
+    font-size: 0.7rem;
+  }
+  .learn-body section .questions .question p:nth-child(2) {
+    width: 14%;
+    font-size: 0.3rem;
+  }
+  .learn-body section .questions .question p:nth-child(3) {
+    padding-left: 2.5em;
+    width: 20%;
+    font-size: 0.4rem;
+  }
+  .learn-body aside {
+    width: 90%;
+    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=App.css.map */

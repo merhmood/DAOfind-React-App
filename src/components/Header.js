@@ -11,11 +11,11 @@ const Header = () => {
         <img src={`${process.env.PUBLIC_URL}/dao-logo.be289bfc.svg`} alt="" />
       </div>
       <div className="input">
-        <img src={`${process.env.PUBLIC_URL}/assets/.png`} alt="" />
         <input
           type="text"
           value={searchValue}
           onChange={(e) => dispatch({ type: "SEARCH", name: e.target.value })}
+          placeholder="Search Dao"
         />
       </div>
       <div className="wallet">
