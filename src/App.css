@@ -117,7 +117,7 @@ header .wallet button {
   header .wallet {
     width: 45%;
     margin: 0 auto;
-    margin-top: -3em;
+    margin-top: -1em;
   }
 }
 
@@ -1002,24 +1002,24 @@ nav uL li img {
     margin-top: 2em;
     width: 101.5vh;
   }
-  .index .index-body section .trophy {
+  .index .index-body section .index-header {
     margin: 0 auto;
     margin-left: 4em;
     padding: 0 3em;
     width: 96.5vh;
   }
-  .index .index-body section .trophy div {
+  .index .index-body section .index-header div {
     width: 70%;
   }
-  .index .index-body section .trophy .hyphen-right {
+  .index .index-body section .index-header .hyphen-right {
     margin-right: 5em;
   }
-  .index .index-body section .trophy img {
+  .index .index-body section .index-header img {
     width: 4%;
     top: -0.2em;
-    left: 13.5em;
+    left: 12em;
   }
-  .index .index-body section .trophy p {
+  .index .index-body section .index-header p {
     padding-left: 1em;
     font-size: 1rem;
     width: 100%;
