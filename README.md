@@ -1,5 +1,4 @@
 # DAOfind-React-Front-End-Skills-Test
-# portfolio-site
 
 ## Project setup
 ```
