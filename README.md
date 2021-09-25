@@ -1,2 +1,16 @@
 # DAOfind-React-Front-End-Skills-Test
-* To visit deployed app click on this link http://bit.ly/3sMnY4H
+# portfolio-site
+
+## Project setup
+```
+yarn install
+```
+
+### Compiles and hot-reloads for development
+```
+yarn serve
+```
+
+### Compiles and minifies for production
+```
+yarn build
