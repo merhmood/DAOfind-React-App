@@ -30,6 +30,8 @@ export const reducerFunction = (state, action) => {
       },
     };
   }
+  /***
+   ****/
   if (action.type === "LOAD-MORE") {
     const addedData = loadMore(state, action.dataSort);
     const newDaoList = state.daoList.concat(addedData);
