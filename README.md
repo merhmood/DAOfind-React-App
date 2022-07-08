@@ -1,15 +1,15 @@
-# DAOfind-React-Front-End-Skills-Test
+# DAOfind-React-App
 
 ## Project setup
 ```
-yarn install
+npm install
 ```
 
 ### Compiles and hot-reloads for development
 ```
-yarn serve
+npm run start
 ```
 
 ### Compiles and minifies for production
 ```
-yarn build
+npm run build
