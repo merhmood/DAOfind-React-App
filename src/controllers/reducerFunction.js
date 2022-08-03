@@ -30,6 +30,8 @@ export const reducerFunction = (state, action) => {
       },
     };
   }
+  /***
+   ****/
   if (action.type === "LOAD-MORE") {
     return { 
       ...state, 
