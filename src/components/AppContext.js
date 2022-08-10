@@ -17,7 +17,7 @@ const AppContextProvider = (props) => {
     },
     daoList: daoListInitialData,
     navClick: "home",
-    filter: {
+    filtered: {
       data: [],
       name: "All",
     },

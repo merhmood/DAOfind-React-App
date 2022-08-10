@@ -36,7 +36,7 @@ export const reducerFunction = (state, action) => {
     return { 
       ...state, 
       daoList: [
-        ...state.daolist, 
+        ...state.daoList, 
         ...loadMore(state, action.dataSort)
       ] 
     };
