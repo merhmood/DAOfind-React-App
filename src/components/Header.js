@@ -4,6 +4,9 @@ import { AppContext } from "./AppContext";
 const Header = () => {
   const { appStateManager, dispatch } = useContext(AppContext);
   const { searchValue } = appStateManager;
+  function onChange (e){
+    dispatch({ type: "SEARCH", name: e.target.value })
+  }
   return (
     <header>
       <div className="logo">
@@ -14,7 +17,7 @@ const Header = () => {
         <input
           type="text"
           value={searchValue}
-          onChange={(e) => dispatch({ type: "SEARCH", name: e.target.value })}
+          onChange={onChange}
           placeholder="Search Dao"
         />
       </div>
