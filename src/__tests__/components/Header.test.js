@@ -1,8 +1,8 @@
 import React from "react"
 import renderer from "react-test-renderer"
-import Header from "../components/Header"
-import { AppContext } from "../components/AppContext";
-import Data from "../data.json"
+import Header from "../../components/Header"
+import { AppContext } from "../../components/AppContext";
+import Data from "../../data.json"
 
 
 describe('Testing index page', () => {

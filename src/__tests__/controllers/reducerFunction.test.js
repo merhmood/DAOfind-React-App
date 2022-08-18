@@ -1,5 +1,5 @@
-import { reducerFunction } from "../controllers/reducerFunction";
-import Data from "../data.json"
+import { reducerFunction } from "../../controllers/reducerFunction";
+import Data from "../../data.json"
 
 describe("testing reducer function", ()=>{
     describe("testing search action", ()=>{
@@ -10,6 +10,22 @@ describe("testing reducer function", ()=>{
         test("testing search action with empty value", () => {
             let actual = reducerFunction(state, { type: "SEARCH", name: "" })
             expect(actual).toEqual(setState(state, {searchValue: ""}))
+
+        })
+        test("testing search action with search value to be aave", () => {
+            let actual = reducerFunction(state, { type: "SEARCH", name: "aave" })
+            expect(actual).toEqual(setState(state, { searchValue: "aave" }))
+
+        })
+    })
+    describe("testing search action", () => {
+        let state;
+        beforeEach(() => {
+            state = getState()
+        })
+        test("testing search action with empty value", () => {
+            let actual = reducerFunction(state, { type: "SEARCH", name: "" })
+            expect(actual).toEqual(setState(state, { searchValue: "" }))
 
         })
         test("testing search action with search value to be aave", () => {
