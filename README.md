@@ -1,8 +1,8 @@
 # DAOfind-React-App
 
 ## Project setup
-```html
-<button><button>
+```
+npm start
 ```
 
 ### Compiles and hot-reloads for development
