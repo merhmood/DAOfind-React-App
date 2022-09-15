@@ -5,7 +5,7 @@
 npm start
 ```
 
-[newButton]
+[newButton](){}
 
 ### Compiles and hot-reloads for development
 ```
