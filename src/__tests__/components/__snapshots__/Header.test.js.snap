@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing index page testing Header component with 43 search value 1`] = `
+<header>
+  <div
+    className="logo"
+  >
+     
+    <img
+      alt=""
+      src="/dao-logo.be289bfc.svg"
+    />
+  </div>
+  <div
+    className="input"
+  >
+    <input
+      onChange={[Function]}
+      placeholder="Search Dao"
+      type="text"
+      value={43}
+    />
+  </div>
+  <div
+    className="wallet"
+  >
+    <button>
+      Connet to wallet
+    </button>
+  </div>
+</header>
+`;
+
+exports[`Testing index page testing Header component with aave search value 1`] = `
+<header>
+  <div
+    className="logo"
+  >
+     
+    <img
+      alt=""
+      src="/dao-logo.be289bfc.svg"
+    />
+  </div>
+  <div
+    className="input"
+  >
+    <input
+      onChange={[Function]}
+      placeholder="Search Dao"
+      type="text"
+      value="aave"
+    />
+  </div>
+  <div
+    className="wallet"
+  >
+    <button>
+      Connet to wallet
+    </button>
+  </div>
+</header>
+`;
+
+exports[`Testing index page testing Header component with empty search value 1`] = `
+<header>
+  <div
+    className="logo"
+  >
+     
+    <img
+      alt=""
+      src="/dao-logo.be289bfc.svg"
+    />
+  </div>
+  <div
+    className="input"
+  >
+    <input
+      onChange={[Function]}
+      placeholder="Search Dao"
+      type="text"
+      value=""
+    />
+  </div>
+  <div
+    className="wallet"
+  >
+    <button>
+      Connet to wallet
+    </button>
+  </div>
+</header>
+`;
