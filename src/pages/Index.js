@@ -8,27 +8,42 @@ import { search } from "../controllers/search";
 
 const Index = () => {
   const { appStateManager, dispatch } = useContext(AppContext);
-  const { daoList, filter, searchValue } = appStateManager;
+  const { daoList, filtered, searchValue } = appStateManager;
   const { bool, showId } = appStateManager.showDao;
   let daoListDisplayData = "";
 
   // toggle display data between filtered and non Filtered
 
-  if (filter.data.length > 0 && filter.name !== "") {
-    daoListDisplayData = filter.data;
-  } else if (filter.data.length === 0 && filter.name === "All") {
+  if (filtered.data.length > 0 && filtered.name !== "") {
+    daoListDisplayData = filtered.data;
+  } else if (filtered.data.length === 0 && filtered.name === "All") {
     daoListDisplayData = daoList;
-  } else if (filter.data.length === 0 && filter.name !== "") {
+  } else if (filtered.data.length === 0 && filtered.name !== "") {
     daoListDisplayData = "";
   } else {
     daoListDisplayData = daoList;
   }
 
-  daoListDisplayData = search(filter, searchValue, daoList);
+  // function displayFilteredOrNonFiltered(appStateManager){
+  //   const { daoList, filtered, searchValue } = appStateManager;
+  //   if (filtered.data.length > 0 && filtered.name !== "") {
+  //     return filtered.data;
+  //   } else if (filtered.data.length === 0 && filtered.name === "All") {
+  //     return daoList
+  //   }
+  //   else if (filtered.data.length === 0 && filtered.name !== "") {
+  //     return ""
+  //   }
+  //   else{
+  //     return daoList
+  //   } 
+  // }
+
+  daoListDisplayData = search(filtered, searchValue, daoList);
 
   let filterSize = filterSizeLogic(daoListDisplayData);
 
-  console.log(filter.data.length, filter.name, daoList.length);
+  console.log(filtered.data.length, filtered.name, daoList.length);
   return (
     <div className="index" style={filterSize}>
       <Header />
@@ -251,8 +266,8 @@ const Index = () => {
               );
             })
           )}
-          {filter.name === "" ||
-            (filter.name === "All" && (
+          {filtered.name === "" ||
+            (filtered.name === "All" && (
               <p
                 className="load-more"
                 onClick={() => dispatch({ type: "LOAD-MORE", dataSort })}
@@ -290,7 +305,7 @@ const Index = () => {
                   dispatch({ type: "FILTER", name: "All", dataSort })
                 }
                 style={
-                  filter.name === "All"
+                  filtered.name === "All"
                     ? { backgroundColor: "#4cb8ff", color: "white" }
                     : {}
                 }
@@ -302,7 +317,7 @@ const Index = () => {
                   dispatch({ type: "FILTER", name: "Protocol", dataSort })
                 }
                 style={
-                  filter.name === "Protocol"
+                  filtered.name === "Protocol"
                     ? { backgroundColor: "#4cb8ff", color: "white" }
                     : {}
                 }
@@ -314,7 +329,7 @@ const Index = () => {
                   dispatch({ type: "FILTER", name: "Service", dataSort })
                 }
                 style={
-                  filter.name === "Service"
+                  filtered.name === "Service"
                     ? { backgroundColor: "#4cb8ff", color: "white" }
                     : {}
                 }
@@ -326,7 +341,7 @@ const Index = () => {
                   dispatch({ type: "FILTER", name: "Grant", dataSort })
                 }
                 style={
-                  filter.name === "Grant"
+                  filtered.name === "Grant"
                     ? { backgroundColor: "#4cb8ff", color: "white" }
                     : {}
                 }
@@ -338,7 +353,7 @@ const Index = () => {
                   dispatch({ type: "FILTER", name: "Media", dataSort })
                 }
                 style={
-                  filter.name === "Media"
+                  filtered.name === "Media"
                     ? { backgroundColor: "#4cb8ff", color: "white" }
                     : {}
                 }
@@ -350,7 +365,7 @@ const Index = () => {
                   dispatch({ type: "FILTER", name: "Social", dataSort })
                 }
                 style={
-                  filter.name === "Social"
+                  filtered.name === "Social"
                     ? { backgroundColor: "#4cb8ff", color: "white" }
                     : {}
                 }
@@ -362,7 +377,7 @@ const Index = () => {
                   dispatch({ type: "FILTER", name: "Investment", dataSort })
                 }
                 style={
-                  filter.name === "Investment"
+                  filtered.name === "Investment"
                     ? { backgroundColor: "#4cb8ff", color: "white" }
                     : {}
                 }
@@ -374,7 +389,7 @@ const Index = () => {
                   dispatch({ type: "FILTER", name: "Platform", dataSort })
                 }
                 style={
-                  filter.name === "Platform"
+                  filtered.name === "Platform"
                     ? { backgroundColor: "#4cb8ff", color: "white" }
                     : {}
                 }
@@ -386,7 +401,7 @@ const Index = () => {
                   dispatch({ type: "FILTER", name: "Collector", dataSort })
                 }
                 style={
-                  filter.name === "Collector"
+                  filtered.name === "Collector"
                     ? { backgroundColor: "#4cb8ff", color: "white" }
                     : {}
                 }

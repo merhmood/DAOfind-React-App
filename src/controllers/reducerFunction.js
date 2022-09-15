@@ -33,9 +33,13 @@ export const reducerFunction = (state, action) => {
   /***
    ****/
   if (action.type === "LOAD-MORE") {
-    const addedData = loadMore(state, action.dataSort);
-    const newDaoList = state.daoList.concat(addedData);
-    return { ...state, daoList: newDaoList };
+    return { 
+      ...state, 
+      daoList: [
+        ...state.daoList, 
+        ...loadMore(state, action.dataSort)
+      ] 
+    };
   }
   if (action.type === "NAV-CLICK") {
     return { ...state, navClick: action.name };
